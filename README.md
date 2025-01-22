@@ -11,11 +11,8 @@ The REST API documentation can be found on [docs.drive-health.com](https://docs.
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:meca-technologies/drive-health-node.git
+npm install drive-health
 ```
-
-> [!NOTE]
-> Once this package is [published to npm](https://app.stainlessapi.com/docs/guides/publish), this will become: `npm install drive-health`
 
 ## Usage
 
