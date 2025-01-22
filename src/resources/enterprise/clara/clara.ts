@@ -113,13 +113,13 @@ export namespace ClaraCreateReminderParams {
   export interface Reminder {
     date: string;
 
+    description: string;
+
     name: string;
 
     period: 'daily' | 'weekly' | 'monthly';
 
     time: string;
-
-    description?: string;
   }
 
   export interface User {

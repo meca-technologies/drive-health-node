@@ -11,7 +11,13 @@ const client = new DriveHealth({
 describe('resource clara', () => {
   test('createReminder: only required params', async () => {
     const responsePromise = client.enterprise.clara.createReminder({
-      reminder: { date: '2019-12-27', name: 'Medication Reminder', period: 'daily', time: 'time' },
+      reminder: {
+        date: '2019-12-27',
+        description: 'description',
+        name: 'Medication Reminder',
+        period: 'daily',
+        time: 'time',
+      },
       reminder_type: 'medication',
       user: { first_name: 'first_name', last_name: 'last_name', phone: '+46991022' },
     });
@@ -28,10 +34,10 @@ describe('resource clara', () => {
     const response = await client.enterprise.clara.createReminder({
       reminder: {
         date: '2019-12-27',
+        description: 'description',
         name: 'Medication Reminder',
         period: 'daily',
         time: 'time',
-        description: 'description',
       },
       reminder_type: 'medication',
       user: {
