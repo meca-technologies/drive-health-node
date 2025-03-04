@@ -32,7 +32,7 @@ describe('resource v1', () => {
       address: 'address',
       city: 'city',
       dob: '2019-12-27',
-      email: 'dev@stainlessapi.com',
+      email: 'dev@stainless.com',
       state: 'state',
       zip: '73216-0225',
     });
